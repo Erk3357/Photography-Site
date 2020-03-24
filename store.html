@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!--Custom CSS-->
     <link rel="stylesheet" href="css/custom.css">
-    <title>Home</title>
+
+    <script type="text/javascript" src="js/jquery.shop.js"></script>
+
+    <title>Store</title>
   </head>
   <body>
     <!-- Nav Menu -->
@@ -31,9 +34,6 @@
         </li>
 		<li class="nav-item">
           <a class="nav-link" href="events.html">Events</a>
-        </li>
-		<li class="nav-item">
-          <a class="nav-link" href="learn.html">Learn</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="about.html">About</a>
@@ -62,12 +62,19 @@
             </div>
 			<div class="card-body card-store">
                   <p class="card-text">Purchase Options<p>
-                    <div class="btn-group btn-store">
-                      <button type="button" class="btn btn-sm btn-outline-secondary btn-store-option">Mug</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary btn-store-option">Canvas</button>
-					  <button type="button" class="btn btn-sm btn-outline-secondary btn-store-option">T-Shirt</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary btn-store-option">Coaster</button>
-                    </div>
+                      <div class="product-image">
+                        <img src="images/wine3.jpg" alt="" />
+                      </div>
+                      <div class="product-description" data-name="Wine #3" data-price="11">
+                        
+                        <form class="add-to-cart" action="cart.html" method="get">
+                          <div>
+                            <label for="qty-3">How many printed copies would you like</label>
+                            <input type="text" name="qty-3" id="qty-3" class="qty form-control" value="1" placeholder="Quantity"/>
+                          </div>
+                          <p><input type="submit" value="Add to cart" class="btn" /></p>
+                        </form>
+                      </div>
                 </div>
         </div>
       </div>
@@ -123,10 +130,111 @@
                 </div>
         </div>
       </div>
-          </div>
-		  
         </div>
-		</div>
+        <button type="button" class="btn btn-secondary checkout">Checkout</button>
+        </div>
+    </div>
+    <footer class="page-footer font-small unique-color-dark">
+      <div style="background-color: #a4a3ad;">
+        <div class="container">
+        <!-- Grid row-->
+          <div class="row py-4 d-flex align-items-center">
+          <!-- Grid column -->
+            <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+              <h6 class="mb-0">Welcome to our website!</h6>
+            </div>
+          </div>
+        <!-- Grid row-->
+        </div>
+      </div>
+		  <!-- Footer Links -->
+      <div class="container text-center text-md-left mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="card-text text-uppercase font-weight-bold">Prism Photography</h6>
+            <hr class="line-break accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p class="card-text">We are a photography group based in GMIT.</p>
+          </div>
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase font-weight-bold card-text">Who We Are</h6>
+            <hr class="line-break accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+              <a class="card-text" href="about.html#nathan">Nathan - Founder</a>
+		    </p>
+            <p>
+              <a class="card-text" href="about.html#shannon">Shannon - Founder</a>
+	     	</p>
+            <p>
+              <a class="card-text" href="about.html#eryk">Eryk - Founder</a>
+		    </p>
+          </div>
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase font-weight-bold card-text">Useful Links</h6>
+            <hr class="line-break accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+              <a class="card-text" href="about.html">About</a>
+		    </p>
+            <p>
+              <a class="card-text" href="sitemap.html">Sitemap</a>
+		    </p>
+            <p>
+              <a class="card-text" href="#"></a>
+		    </p>
+          </div>
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase font-weight-bold card-text">Contact</h6>
+            <hr class="line-break accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+              <a class="card-text" href="https://goo.gl/maps/soA9ZBL6x9hxcrQb6">GMIT Galway Ireland</a>
+		    </p>
+            <p>
+              <a class="card-text" href="mailto:info@prismphotography.gmit.ie"> info@prismphotography.gmit.ie</a>
+		    </p>
+            <p>
+              <a class="card-text" href="tel:+353831234567"> +353 83 123 4567</a>
+		    </p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Footer Links -->
+      <!-- Copyright -->
+      <div class=" card-text footer-copyright text-center py-3">© 2020 Copyright:
+        <p>Prism Photography</p>
+      </div>
+      <!-- Copyright -->
+    </footer>
+	<!-- Footer -->
+	
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
+<!--
+Created By Nathan, Shannon, & Eryk
+Commenting and indentation done by Nathan
+Created with the help of Bootstrap
+Lead code - Nathan
+Lead artifacts - Shannon
+Lead 
+2020 Prism Photography
+-->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
